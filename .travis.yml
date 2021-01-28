@@ -9,6 +9,6 @@ before_script:
   - nvm install stable
   - nvm use stable
 script:
-  - npm i -g npm@5.8.0
+  - npm i -g npm
   - npm install
   - npm test
