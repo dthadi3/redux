@@ -1,10 +1,9 @@
 arch: ppc64le
 language: node_js
 dist: bionic
-node_js:
-  - 8
-  - 9
+node_js: node
 script:
   - npm i -g npm@5.8.0
   - npm install
+  - npm audit fix
   - npm test
