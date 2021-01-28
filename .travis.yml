@@ -1,4 +1,6 @@
-arch: ppc64le
+arch: 
+  - amd64
+  - ppc64le
 language: node_js
 dist: bionic
 node_js: node
@@ -11,4 +13,5 @@ before_script:
 script:
   - npm i -g npm
   - npm install
+  - npm audit fix
   - npm test
